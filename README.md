@@ -1,4 +1,4 @@
-# OOP school library
+# TDD Project
 
 > This is demonstration project that implements a class using TDD approach
 

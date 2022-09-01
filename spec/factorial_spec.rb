@@ -11,4 +11,7 @@ describe Solver do
   it 'test factorial output' do
     expect { @solver.factorial(-5) }.to raise_error
   end
+  it 'test factorial output' do
+    expect(@solver.factorial(0)).to eq(1)
+  end
 end

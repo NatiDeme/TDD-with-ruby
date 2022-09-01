@@ -4,7 +4,7 @@ class Solver
     error = 'Wrong Number'
     raise error if num.negative?
 
-    final if num.zero?
+    return final if num.zero?
 
     (1..num).each do |i|
       final *= i
