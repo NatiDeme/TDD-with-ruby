@@ -1,11 +1,11 @@
 require_relative '../solver'
-describe Factorial do
+
+describe Solver do
+  testing_factorial = Solver.new
   it 'test factorial output' do
-    testing_factorial = Solver.factorial(5)
-    expect(testing_factorial).to eq 120
+    expect(testing_factorial.factorial(5)).to eq(120)
   end
   it 'test factorial output' do
-    testing_factorial = Solver.factorial(-1)
-    expect(testing_factorial).to eq 'Wrong Number'
+    expect(testing_factorial.factorial(-5)).to eq 'Wrong Number'
   end
 end

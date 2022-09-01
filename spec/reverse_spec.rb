@@ -1,7 +1,7 @@
 require_relative '../solver'
-describe Reverse do
+describe Solver do
+  testing_reverse = Solver.new
   it 'test factorial output' do
-    testing_reverse = Solver.reverse('hello')
-    expect(testing_reverse).to eq 'olleh'
+    expect(testing_reverse.reverse_word('hello')).to eq 'olleh'
   end
 end
