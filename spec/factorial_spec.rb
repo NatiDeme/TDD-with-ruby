@@ -1,11 +1,14 @@
 require_relative '../solver'
 
 describe Solver do
-  testing_factorial = Solver.new
+  before(:each) do
+    @solver = Solver.new
+  end
+
   it 'test factorial output' do
-    expect(testing_factorial.factorial(5)).to eq(120)
+    expect(@solver.factorial(5)).to eq(120)
   end
   it 'test factorial output' do
-    expect(testing_factorial.factorial(-5)).to eq 'Wrong Number'
+    expect { @solver.factorial(-5) }.to raise_error
   end
 end

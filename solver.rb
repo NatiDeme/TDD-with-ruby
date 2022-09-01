@@ -1,8 +1,8 @@
 class Solver
   def factorial(num)
     final = 1
-
-    return 'Wrong Number' if num.negative?
+    error = 'Wrong Number'
+    raise error if num.negative?
 
     final if num.zero?
 
@@ -16,4 +16,3 @@ class Solver
     word.reverse
   end
 end
-
